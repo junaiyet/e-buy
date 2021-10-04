@@ -1,0 +1,114 @@
+
+.navigation {
+
+    nav {
+        ul {
+            li {
+                a {
+                    padding: 30px 20px;
+                    color: $tertiary-color !important;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 8px;
+                        bottom: 20px;
+                        width: 0px;
+                        height: 1px;
+                        background-color: $secondery-color;
+                        transition: .10s;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 8px;
+                        bottom: 25px;
+                        width: 0px;
+                        height: 1px;
+                        background-color: $secondery-color;
+                        transition: .5s;
+                    }
+
+                    &:hover::after {
+                        width: 11px;
+                    }
+
+                    &:hover::before {
+                        width: 22px;
+                    }
+                }
+
+                .active {
+                    color: $secondery-color !important;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 8px;
+                        bottom: 20px;
+                        width: 11px;
+                        height: 1px;
+                        background-color: $secondery-color;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 8px;
+                        bottom: 25px;
+                        width: 22px;
+                        height: 1px;
+                        background-color: $secondery-color;
+                    }
+                }
+            }
+        }
+
+        .form {
+            position: relative;
+
+            .search-ber {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: .30s;
+                opacity: 0;
+                width: 0;
+                border: 1px solid $secondery-color;
+                border-radius: 5px;
+            }
+
+            .search-icon {
+                position: absolute;
+                right: 19px;
+                top: 27%;
+                transform: translateY(-50%);
+                font-size: 16px;
+
+            }
+
+            .search-toggole {
+                opacity: 1;
+                width: 150px;
+
+            }
+
+        }
+
+        .shope {
+            color: $secondery-color;
+            font-size: 16px;
+
+            i {
+                margin-right: 10px;
+            }
+        }
+
+
+
+    }
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap');
+// @import './variables';
+
+
+body{
+    overflow-x: hidden;
+    font-size: 14px;
+    font-family:$primary-font;
+    line-height: 24px;
+
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 .h1{
+font-size: 70px;
+}
+h2 .h2{
+font-size: 40px !important;
+}
+h3 .h3{
+font-size: 36px;
+}
+h4 .h4{
+font-size: 36px;
+}
+.section{
+    margin-bottom: 100px;
+}
